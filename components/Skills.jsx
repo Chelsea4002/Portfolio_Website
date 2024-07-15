@@ -5,7 +5,7 @@ export default function Skills() {
     <>
       <div className="relative h-full">
         <div className="text-[#6497D6] flex ml-3 mb-1 lg:ml-0 lg:mb-4 text-lg lg:text-3xl">
-          <p className="font-semibold mr-2">Skills</p>
+          <h2 className="font-semibold mr-2">Skills</h2>
           <IoBookOutline className="-ml-1 mt-1" />
         </div>
 

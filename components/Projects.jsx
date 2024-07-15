@@ -5,7 +5,7 @@ export default function Projects() {
     <>
       <div className="relative h-full">
         <div className="text-[#6497D6] flex ml-3 mb-1 lg:ml-0 lg:mb-4 text-lg lg:text-3xl">
-          <p className="font-semibold mr-2">Recent Works</p>
+          <h2 className="font-semibold mr-2">Recent Works</h2>
           <FaRegFolder className="-ml-1 mt-1" />
         </div>
 
