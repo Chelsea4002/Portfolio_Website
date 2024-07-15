@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <div className="mt-[40px] md:mt-[70px] lg:mt-[100px]" /> 
       <About />
       <Education />
       <Skills />

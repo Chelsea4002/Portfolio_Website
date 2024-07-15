@@ -16,7 +16,7 @@ export default function Navbar() {
     <>
       <nav className="bg-[#B3D7ED] relative z-10">
         <div  className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-10 lg:h-16">
+          <div className="flex items-center justify-between h-12 lg:h-16">
             <div className="flex items-center">
               <div className="flex-shirnk-0">
                 <Link href="/" passHref legacyBehavior>
@@ -26,14 +26,14 @@ export default function Navbar() {
                       width={90}
                       height={90}
                       alt="Logo"
-                      className="mt-[10px] lg:mt-[14px] -ml-6 lg:-ml-5 lg:w-[130px] lg:h-[130px]"
+                      className="mt-[10px] -ml-6 md:mt-[14px] md:-ml-4 md:w-[95px] md:h-[95px] lg:mt-[14px] lg:-ml-5 lg:w-[130px] lg:h-[130px]"
                     />
                   </a>
                 </Link>
               </div>
             </div>
             <div className="hidden md:block">
-              <div className="ml-4 flex items-center space-x-4 text-white text-xl font-extrabold">
+              <div className="ml-4 flex items-center space-x-4 text-white text-xl font-extrabold md:space-x-1">
                 <Link href="/" passHref legacyBehavior>
                   <a className="cursor-pointer block hover:text-[#6497D6] hover:underline hover:bg-white rounded-lg p-2">
                     Home
