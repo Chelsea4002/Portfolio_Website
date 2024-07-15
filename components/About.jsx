@@ -34,7 +34,7 @@ export default function About() {
               className="rounded-3xl text-[18px] font-semibold text-white bg-[#6497D6] -ml-4 mt-7 w-[356px] h-[30px] 
               hover:bg-slate-300 hover:text-[#6497D6]
               md:mt-7 md:h-[40px] md:w-[665px] md:text-[25px]
-              lg:text-[30px] lg:-ml-6 lg:mt-5 lg:w-[1150px] lg:h-[45px]"
+              lg:text-[30px] lg:-ml-6 lg:mt-5 lg:w-[1180px] lg:h-[45px]"
             >
               Download CV
             </button>

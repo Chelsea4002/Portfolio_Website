@@ -112,7 +112,7 @@ export default function HeroSection() {
           className="rounded-3xl text-[18px] font-semibold text-white bg-[#6497D6] ml-[10px] mt-4 w-[356px] h-[30px] 
           hover:bg-slate-300 hover:text-[#6497D6]
           md:mt-5 md:h-[40px] md:w-[665px] md:text-[25px]
-          lg:text-[30px] lg:ml-[18px] lg:mt-5 lg:w-[1150px] lg:h-[45px]"
+          lg:text-[30px] lg:ml-[18px] lg:mt-5 lg:w-[1180px] lg:h-[45px]"
         >
           Hire Me
         </button>
