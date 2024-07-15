@@ -11,9 +11,13 @@ export default function Home() {
       <HeroSection />
       <div className="mt-[40px] md:mt-[70px] lg:mt-[100px]" /> 
       <About />
+      <div className="mt-[40px] md:mt-[70px] lg:mt-[100px]" /> 
       <Education />
+      <div className="mt-[40px] md:mt-[70px] lg:mt-[100px]" /> 
       <Skills />
+      <div className="mt-[40px] md:mt-[70px] lg:mt-[100px]" /> 
       <Projects />
+      <div className="mt-[40px] md:mt-[70px] lg:mt-[100px]" /> 
       <Contact />
     </main>
   );
