@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[#F8F2EB]">
         <Navbar />
-        <main className="flex-1 mx-auto max-w-7xl sm:px-6 lg:px-8"> 
+        <main className="flex-1 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-12 lg:mt-16"> 
           {children}
         </main>
         <Footer />

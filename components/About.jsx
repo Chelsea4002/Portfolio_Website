@@ -1,19 +1,34 @@
+'use client';
+
 import Image from "next/image";
 import { FiUser } from "react-icons/fi";
 
+const PDF_FILE_URL = 'http://localhost:3000/Hyerang_Cho_Resume.pdf'
+
 export default function About() {
+  const downloadFileAtURL= (url) => {
+    const aTag = document.createElement('a');
+
+    aTag.href = url;
+    aTag.setAttribute('download', 'Hyerang_Cho_Resume.pdf');
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  }
+
   return (
     <>
-      <div className="relative h-full">
+      <section id="about" className="relative h-full scroll-mt-navbar">
         <div className="text-[#6497D6] flex ml-3 mb-1 lg:ml-0 lg:mb-4 text-lg lg:text-3xl">
           <h2 className="font-semibold mr-2">About Me</h2>
           <FiUser className="-ml-1 mt-1" />
         </div>
 
         <div 
-          className="bg-white max-w-[95%] h-[330px] rounded-3xl relative mx-auto p-6 
-          md:h-[395px]
-          lg:p-10 lg:h-[510px] lg:max-w-[100%]">
+          className="bg-white max-w-[95%] h-[320px] rounded-3xl relative mx-auto p-6 
+          md:h-[385px]
+          lg:p-10 lg:h-[510px] lg:max-w-[100%]"
+        >
 
           <div className="-mt-6">
             <div className="flex flex-col items-center md:flex-row lg:flex-row">
@@ -30,17 +45,21 @@ export default function About() {
               </p>
             </div>
 
-            <button 
-              className="rounded-3xl text-[18px] font-semibold text-white bg-[#6497D6] -ml-4 mt-7 w-[356px] h-[30px] 
-              hover:bg-slate-300 hover:text-[#6497D6]
-              md:mt-7 md:h-[40px] md:w-[665px] md:text-[25px]
-              lg:text-[30px] lg:-ml-6 lg:mt-5 lg:w-[1180px] lg:h-[45px]"
-            >
-              Download CV
-            </button>
+            <div className="justify-start block">
+              <button 
+                className="rounded-3xl text-[18px] font-semibold text-white bg-[#6497D6] w-[105%] mt-6 -ml-[2.5%]
+                hover:bg-slate-300 hover:text-[#6497D6] 
+                md:text-[25px]
+                lg:text-[30px]
+                transition-all duration-300"
+                onClick={() => { downloadFileAtURL(PDF_FILE_URL) }}
+              >
+                Download CV
+              </button>
+            </div>
           </div>
         </div> 
-      </div>
+      </section>
     </>
   )
 }
