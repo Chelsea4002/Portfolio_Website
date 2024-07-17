@@ -1,6 +1,57 @@
+'use client';
+
+import { useState } from "react";
 import { IoChatbubbles } from "react-icons/io5";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const [formSuccess, setFormSuccess] = useState(false)
+  const [formSuccessMessage, setFormSuccessMessage] = useState("")
+
+  const handleInput = (e) => {
+    const fieldName = e.target.name;
+    const fieldValue = e.target.value;
+
+    setFormData((prevState) => ({
+      ...prevState,
+      [fieldName]: fieldValue
+    }));
+  }
+
+  const submitForm = (e) => {
+    e.preventDefault()
+
+    const formURL = e.target.action
+    const data = new FormData()
+
+    Object.entries(formData).forEach(([key, value]) => {
+      data.append(key, value);
+    })
+
+    fetch(formURL, {
+      method: "POST",
+      body: data,
+      headers: {
+        'accept': 'application/json',
+      },
+    }).then((response) => response.json())
+    .then((data) => {
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      })
+
+      setFormSuccess(true)
+      setFormSuccessMessage(data.submission_text)
+    })
+  }
+
   return (
     <>
       <section id="contact" className="relative h-full scroll-mt-navbar">
@@ -10,11 +61,68 @@ export default function Contact() {
         </div>
 
         <div 
-          className="bg-white max-w-[95%] h-[330px] rounded-3xl relative mx-auto p-6 
-          md:h-[395px]
-          lg:p-10 lg:h-[510px] lg:max-w-[100%]">
+          className="bg-white max-w-[95%] h-full rounded-3xl relative mx-auto p-6 
+          lg:p-10 lg:max-w-[100%]"
+        >
+          {formSuccess ?
+            <div>{formSuccessMessage}</div>
+            :
+            <form method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm}>
+              <div className="mb-2 text-[16px] md:text-[20px] lg:text-[24px]">
+                <input 
+                  type="text" 
+                  name="name" 
+                  placeholder="Name" 
+                  onChange={handleInput} 
+                  value={formData.name} 
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6497D6]"
+                />
+              </div>
 
-          
+              <div className="mb-2 text-[16px] md:text-[20px] lg:text-[24px]">
+                <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Email" 
+                  onChange={handleInput} 
+                  value={formData.email} 
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6497D6]"
+                />
+              </div>
+
+              <div className="mb-2 text-[16px] md:text-[20px] lg:text-[24px]">
+                <input 
+                  type="text" 
+                  name="subject" 
+                  placeholder="Subject" 
+                  onChange={handleInput} 
+                  value={formData.subject} 
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6497D6]"
+                />
+              </div>
+
+              <div className="text-[16px] md:text-[20px] lg:text-[24px]">
+                <textarea 
+                  name="message" 
+                  placeholder="Write your message" 
+                  onChange={handleInput} 
+                  value={formData.message} 
+                  className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6497D6] h-32 resize-none"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit"
+                className="rounded-lg text-[18px] font-semibold text-white bg-[#6497D6] w-full mt-[1%]
+                hover:bg-slate-300 hover:text-[#6497D6] 
+                md:text-[25px]
+                lg:text-[30px]
+                transition-all duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          }
         </div> 
       </section>
     </>
