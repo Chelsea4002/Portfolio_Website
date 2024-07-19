@@ -49,42 +49,54 @@ export const languages = [
     },
     {
         id: 9,
+        src: "/logo/expressjs.png",
+        title: "Express.js",
+        style: "shadow-sky-600"
+    },
+    {
+        id: 10,
+        src: "/logo/nodejs.png",
+        title: "Node.js",
+        style: "shadow-green-600"
+    },
+    {
+        id: 11,
         src: "/logo/Bootstrap.png",
         title: "Bootstrap",
         style: "shadow-purple-600"
     },
     {
-        id: 10,
+        id: 12,
         src: "/logo/tailwind.png",
         title: "Tailwind",
         style: "shadow-sky-400"
     },
     {
-        id: 11,
+        id: 13,
         src: "/logo/oracle.png",
         title: "oracle",
         style: "shadow-red-500"
     },
     {
-        id: 12,
+        id: 14,
         src: "/logo/MongoDB.png",
         title: "MongoDB",
         style: "shadow-green-600"
     },
     {
-        id: 13,
+        id: 15,
         src: "/logo/GitHub.png",
         title: "GitHub",
         style: "shadow-gray-400"
     },
     {
-        id: 14,
+        id: 16,
         src: "/logo/Jira.png",
         title: "Jira",
         style: "shadow-blue-500"
     },
     {
-        id: 15,
+        id: 17,
         src: "/logo/Figma.png",
         title: "Figma",
         style: "shadow-red-400"
