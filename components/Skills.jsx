@@ -23,10 +23,10 @@ export default function Skills() {
                 >
                   <img 
                     src={src} 
-                    alt="" 
+                    alt={`Logo of ${title}`}
                     className="w-20 mx-auto" 
                   />
-                  <p className="mt-4">{title}</p>
+                  <p className="mt-4 font-semibold">{title}</p>
                 </div>
               ))
             }
