@@ -2,6 +2,9 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export const metadata = {
   title: "Chelsea's Portfolio",
   description: "Created by Chelsea Cho",
