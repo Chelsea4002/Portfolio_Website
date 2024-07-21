@@ -8,9 +8,9 @@ export default function HeroSection() {
     <>
       <section id="home" className="scroll-mt-navbar">
 
-        <div className="max-w-[95%] relative mx-auto lg:max-w-[100%] h-[180px] md:h-[270px] lg:h-[330px]">
-          <div className="bg-white rounded-b-3xl h-[110px] md:h-[155px] lg:h-[190px] p-0">
-            <div className="relative h-full break-words w-[65%] translate-y-1 md:translate-y-4">
+        <div className="max-w-[95%] relative mx-auto lg:max-w-[100%] h-[210px] md:h-[300px] lg:h-[330px]">
+          <div className="bg-[url('/clover.png')] rounded-b-3xl h-[140px] md:h-[190px] lg:h-[190px] p-0">
+            <div className="relative h-full break-words w-[65%] translate-y-3 md:translate-y-7 lg:translate-y-4">
               <div className="flex md:space-x-2 items-center transform translate-x-[132px] md:translate-x-[250px] lg:translate-x-[435px] p-2">
                 <img
                   src="/hand.png"
@@ -19,11 +19,11 @@ export default function HeroSection() {
                 />
                 <div className="pl-2 font-bold break-words">
                   <div class="overflow-hidden inline-block">
-                    <p class="animate-typing pr-5 text-xl md:text-4xl lg:text-5xl overflow-hidden inline-block whitespace-nowrap border-r-4 border-r-black">
+                    <p class="animate-typing pr-5 text-2xl md:text-4xl lg:text-5xl overflow-hidden inline-block whitespace-nowrap border-r-4 border-r-white text-white">
                       Hi there!
                     </p>
                   </div>
-                  <p className="text-lg md:text-2xl lg:text-3xl">
+                  <p className="text-lg md:text-2xl lg:text-3xl text-white">
                     Thank you for visiting my website
                   </p>
                 </div>
@@ -38,7 +38,7 @@ export default function HeroSection() {
               height={240}
               alt="Picture of Chelsea"
               className="object-cover rounded-full absolute top-4 left-4 md:left-9 lg:left-32
-              w-[130px] h-[130px] mt-8 lg:mt-2
+              w-[130px] h-[130px] mt-16 md:mt-18 lg:mt-2
               md:w-[220px] md:h-[220px]
               lg:w-[305px] lg:h-[305px]"
             />
@@ -64,7 +64,7 @@ export default function HeroSection() {
 
         </div>
       
-        <hr className="h-[1px] md:h-[2px] lg:h-[2px] bg-[#6497D6] mt-4 mb-4 md:mt-6 md:mb-6 max-w-[95%] mx-auto lg:max-w-[100%]" />
+        <hr className="h-[1px] md:h-[2px] lg:h-[2px] bg-[#6497D6] mt-[25px] mb-[25px] md:mt-6 md:mb-6 lg:mt-6 lg:mb-6 max-w-[95%] mx-auto lg:max-w-[100%]" />
 
         <div className="bg-white max-w-[95%] rounded-3xl relative mx-auto p-4 lg:max-w-[100%]">
           <div>
