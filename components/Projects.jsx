@@ -24,7 +24,7 @@ export default function Projects() {
         </div>
 
         <div 
-          className="bg-white rounded-3xl relative mx-auto p-10 lg:p-10 lg:max-w-[100%] text-lg lg:text-xl"
+          className="bg-white max-w-[95%] rounded-3xl relative mx-auto p-10 lg:p-10 lg:max-w-[100%] text-lg lg:text-xl"
         >
           
           <Slider {...settings}>
