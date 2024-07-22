@@ -71,7 +71,7 @@ export default function Contact() {
           className="bg-white max-w-[95%] h-full rounded-3xl relative mx-auto p-6 
           lg:p-10 lg:max-w-[100%]"
         >
-          <form method="POST" action="https://getform.io/f/arolnvyb" onSubmit={submitForm}>
+          <form method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm}>
             <div className="mb-2 text-[16px] md:text-[20px] lg:text-[24px]">
               <input 
                 type="text" 

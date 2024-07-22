@@ -12,7 +12,7 @@ export default function Modal({ show, message, onClose }) {
             <IoClose className="text-xl" />
           </button>
         </div>
-        <div className="mt-2 mb-4 mr-12 ml-12 text-center flex flex-col items-center">
+        <div className="mt-2 mb-4 mr-6 ml-6 lg:mr-12 lg:ml-12 text-center flex flex-col items-center">
             <Image
                 src="/message.png"
                 width={180}
