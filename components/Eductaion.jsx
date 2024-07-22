@@ -13,15 +13,15 @@ export default function Education() {
       </div>
 
       <div className="bg-white max-w-[95%] rounded-3xl relative mx-auto p-6 lg:p-10 lg:max-w-[100%]">
-        <div className="space-y-10 lg:space-y-16">
+        <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {experienceData.map((val) => (
             <Card
               key={val._id}
               icon={val.category === "education" ? <IoSchool /> : <FiBriefcase />}
               duration={val.duration}
               name={val.name}
-              major={val.major}
               title={val.title}
+              degree={val.degree}
               detail={val.detail}
             />
           ))}
