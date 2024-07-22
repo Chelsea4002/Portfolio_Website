@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FiUser } from "react-icons/fi";
 
-const PDF_FILE_URL = 'http://localhost:3000/Hyerang_Cho_Resume.pdf'
+const PDF_FILE_URL = 'https://portfolio-website-one-murex.vercel.app/Hyerang_Cho_Resume.pdf'
 
 export default function About() {
   const downloadFileAtURL= (url) => {

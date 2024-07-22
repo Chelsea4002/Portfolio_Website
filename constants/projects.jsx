@@ -32,7 +32,7 @@ export const projects = [
         description: "Created a responsive portfolio website based on my resume",
         skills: ["Next.js", "React.js", "Tailwind CSS"],
         img: "/projects/portfolio_website.png",
-        demo: "http://localhost:3000",
+        demo: "https://portfolio-website-one-murex.vercel.app/",
         source: "https://github.com/Chelsea4002/portfolio_website"
     }
 ];

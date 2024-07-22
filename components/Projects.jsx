@@ -62,25 +62,29 @@ export default function Projects() {
                       </div>
 
                       <div className="flex justify-center mt-8">
-                        <button
-                          className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[120px] h-[40px] lg:w-[150px] lg:h-[50px] mr-6
-                          hover:bg-slate-300 hover:text-[#6497D6] hover:scale-110
-                          md:text-[25px]
-                          lg:text-[30px]
-                          transition-all duration-300"
-                        >
-                          Demo
-                        </button>
+                        <a href={demo}>
+                          <button
+                            className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[120px] h-[40px] lg:w-[150px] lg:h-[50px] mr-6
+                            hover:bg-slate-300 hover:text-[#6497D6] hover:scale-110
+                            md:text-[25px]
+                            lg:text-[30px]
+                            transition-all duration-300"
+                          >
+                            Demo
+                          </button>
+                        </a>
 
-                        <button
-                          className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[120px] h-[40px] lg:w-[150px] lg:h-[50px]
-                          hover:bg-slate-300 hover:text-[#6497D6] hover:scale-110
-                          md:text-[25px]
-                          lg:text-[30px]
-                          transition-all duration-300"
-                        >
-                          Source
-                        </button>
+                        <a href={source}>
+                          <button
+                            className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[120px] h-[40px] lg:w-[150px] lg:h-[50px]
+                            hover:bg-slate-300 hover:text-[#6497D6] hover:scale-110
+                            md:text-[25px]
+                            lg:text-[30px]
+                            transition-all duration-300"
+                          >
+                            Source
+                          </button>
+                        </a>
                         
                       </div>
                     </div>
