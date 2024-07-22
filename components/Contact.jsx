@@ -76,9 +76,10 @@ export default function Contact() {
               <input 
                 type="text" 
                 name="name" 
-                placeholder="Name" 
+                placeholder="Name*" 
                 onChange={handleInput} 
                 value={formData.name} 
+                required
                 className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6497D6]"
               />
             </div>
@@ -87,7 +88,7 @@ export default function Contact() {
               <input 
                 type="email" 
                 name="email" 
-                placeholder="Email" 
+                placeholder="Email*" 
                 onChange={handleInput} 
                 value={formData.email} 
                 required
@@ -109,7 +110,7 @@ export default function Contact() {
             <div className="text-[16px] md:text-[20px] lg:text-[24px]">
               <textarea 
                 name="message" 
-                placeholder="Write your message" 
+                placeholder="Write your message*" 
                 onChange={handleInput} 
                 value={formData.message} 
                 required

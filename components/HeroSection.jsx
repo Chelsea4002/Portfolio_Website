@@ -18,8 +18,8 @@ export default function HeroSection() {
                   className="w-[50px] h-[50px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] hand"
                 />
                 <div className="pl-2 font-bold break-words">
-                  <div class="overflow-hidden inline-block">
-                    <p class="animate-typing pr-5 text-2xl md:text-4xl lg:text-5xl overflow-hidden inline-block whitespace-nowrap border-r-4 border-r-white text-white">
+                  <div className="overflow-hidden inline-block">
+                    <p className="animate-typing pr-5 text-2xl md:text-4xl lg:text-5xl overflow-hidden inline-block whitespace-nowrap border-r-4 border-r-white text-white">
                       Hi there!
                     </p>
                   </div>
