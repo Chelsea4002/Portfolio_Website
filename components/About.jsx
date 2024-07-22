@@ -34,10 +34,33 @@ export default function About() {
               className="rounded-full w-[200px] h-[200px] mt-3 md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] object-cover"
             />
 
-            <p className="text-[16px] text-center md:text-[20px] lg:text-[28px] pr-2 pl-2 md:pr-4 md:pl-4">
-              I am Chelsea Cho, an entry-level web developer candidate from Toronto, Canada.
-            </p>
+            {/* <div className="text-[16px] mt-4 md:text-[20px] md:pr-2 lg:pr-6 lg:text-[28px]  max-w-[95%]">
+              <p className="text-center">
+                I am Chelsea Cho, an entry-level web developer from Toronto, Canada. 
+              </p>
+              <ul className="list-disc list-inside mt-4 space-y-2">
+                <li>a self-motivated team player with a positive attitude, capable of thriving in fast-paced, demanding environments</li>
+                <li>adapt quickly to changing priorities</li>
+                <li>enjoy working independently or within diverse teams to deliver quality results</li>
+              </ul>
+            </div> */}
+
+
+<div className="text-[16px] mt-4 md:text-[20px] md:pr-4 lg:pr-9 lg:text-[28px] max-w-[95%] mx-auto">
+  <p className="text-center font-semibold text-gray-800">
+    I am <strong>Chelsea Cho</strong>, an entry-level <strong>web developer</strong> from Toronto, Canada.
+  </p>
+  <ul className="list-disc list-inside mt-4 space-y-2 pl-4 lg:pl-1">
+    <li className="leading-relaxed"><strong>Self-motivated team player</strong> with a positive attitude, capable of thriving in fast-paced, demanding environments</li>
+    <li className="leading-relaxed"><strong>Adapt quickly</strong> to changing priorities</li>
+    <li className="leading-relaxed"><strong>Enjoy working</strong> independently or within diverse teams to deliver quality results</li>
+  </ul>
+</div>
+
           </div>
+
+
+          
 
           <div className="justify-start block">
             <button 
