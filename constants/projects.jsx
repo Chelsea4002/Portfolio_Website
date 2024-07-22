@@ -19,6 +19,15 @@ export const projects = [
     },
     {
         id: 3,
+        title: "Listings Website",
+        description: "Leveraged knowledge of React.js and Next.js to create an interface for viewing listings",
+        skills: ["React.js", "Next.js", "Express.js", "Bootstrap", "MongoDB"],
+        img: "/projects/listings_website.png",
+        demo: "https://listings-website.onrender.com",
+        source: "https://github.com/Chelsea4002/Listings_Website"
+    },
+    {
+        id: 4,
         title: "Museum Website",
         description: "Developed a responsive user interface to interact with the Metropolitan Museum of Art Collection API",
         skills: ["Next.js", "React.js", "Bootstrap", "MongoDB"],
@@ -27,7 +36,7 @@ export const projects = [
         source: "https://github.com/Chelsea4002/WEB422_Assignment6-2"
     },
     {
-        id: 4,
+        id: 5,
         title: "Portfolio Website",
         description: "Created a responsive portfolio website based on my resume",
         skills: ["Next.js", "React.js", "Tailwind CSS"],
