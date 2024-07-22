@@ -32,10 +32,10 @@ export default function Projects() {
               projects.map(({ id, title, description, skills, img, demo, source }) => (
                 <div
                   key={id}
-                  className="bg-slate-100 rounded-xl shadow-md shadow-gray-500 mb-6 h-[540px] md:h-[640px] lg:h-96"
+                  className="bg-slate-100 rounded-xl shadow-md shadow-gray-500 h-[468px] md:h-[580px] lg:h-[400px] mb-4"
                 >
-                  <div className="lg:flex items-center">
-                    <div className="lg:flex-grow-[3] lg:basis-0 p-4">
+                  <div className="lg:flex p-2 lg:p-5">
+                    <div className="lg:flex-grow-[3] lg:basis-0">
                       <img 
                         src={img} 
                         alt={`Image of ${title}`}
@@ -43,28 +43,30 @@ export default function Projects() {
                       />
                     </div>
 
-                    <div className="lg:flex-grow-[2] lg:basis-0 pr-4 pl-4">
+                    <div className="lg:flex-grow-[2] lg:basis-0">
 
-                      <div>
-                        <h3 className="mt-2 lg:mt-0 mb-2 font-extrabold text-2xl lg:text-3xl text-center">{title}</h3>
+                      <div className="relative mt-2 md:mt-4 mb-2 md:mb-4 lg:mt-0">
+                        <h3 className="font-extrabold text-2xl lg:text-3xl text-center">{title}</h3>
                       </div>
 
-                      <div>
+                      <div className="h-[110px] md:h-[60px] lg:h-[110px]">
                         <p className="text-center text-lg lg:text-2xl">{description}</p>
                       </div>
 
-                      <div className="flex flex-row flex-wrap justify-center mt-4">
-                        {
-                          skills.map((skill, index) => (
-                            <div key={index} className="text-sm lg:text-lg bg-gradient-to-r from-[#a6d2ec] via-blue-400 to-[#a6d2ec] rounded-2xl w-auto h-auto p-2 mr-2 mt-2 text-white font-extrabold">{skill}</div>
-                          ))
-                        }
+                      <div className="h-[70px] md:h-[40px] lg:h-[95px]">
+                        <div className="flex flex-row flex-wrap justify-center mt-2">
+                          {
+                            skills.map((skill, index) => (
+                              <div key={index} className="text-xs md:text-sm lg:text-lg bg-gradient-to-r from-[#a6d2ec] via-blue-400 to-[#a6d2ec] rounded-2xl w-auto h-auto p-2 mr-2 mt-2 text-white font-extrabold">{skill}</div>
+                            ))
+                          }
+                        </div>
                       </div>
 
                       <div className="flex justify-center mt-8">
                         <a href={demo}>
                           <button
-                            className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[120px] h-[40px] lg:w-[150px] lg:h-[50px] mr-6
+                            className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[80px] h-[40px] md:w-[120px] md:h-[45px] lg:w-[160px] lg:h-[50px] mr-6
                             hover:bg-slate-300 hover:text-[#6497D6] hover:scale-110
                             md:text-[25px]
                             lg:text-[30px]
@@ -76,7 +78,7 @@ export default function Projects() {
 
                         <a href={source}>
                           <button
-                            className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[120px] h-[40px] lg:w-[150px] lg:h-[50px]
+                            className="rounded-md text-[20px] font-semibold text-white bg-[#6497D6] w-[80px] h-[40px] md:w-[120px] md:h-[45px] lg:w-[160px] lg:h-[50px]
                             hover:bg-slate-300 hover:text-[#6497D6] hover:scale-110
                             md:text-[25px]
                             lg:text-[30px]

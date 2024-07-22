@@ -19,7 +19,7 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Museum of Art Website",
+        title: "Museum Website",
         description: "Developed a responsive user interface to interact with the Metropolitan Museum of Art Collection API",
         skills: ["Next.js", "React.js", "Bootstrap", "MongoDB"],
         img: "/projects/museum_website.png",
