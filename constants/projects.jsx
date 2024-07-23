@@ -32,8 +32,8 @@ export const projects = [
         description: "Developed a responsive user interface to interact with the Metropolitan Museum of Art Collection API",
         skills: ["Next.js", "React.js", "Bootstrap", "MongoDB"],
         img: "/projects/museum_website.png",
-        demo: "https://museumof-ffnigerov-chelsea4002s-projects.vercel.app",
-        source: "https://github.com/Chelsea4002/WEB422_Assignment6-2"
+        demo: "https://museumofart.vercel.app/",
+        source: "https://github.com/Chelsea4002/Museum_Website"
     },
     {
         id: 5,
