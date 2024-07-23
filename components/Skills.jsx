@@ -102,6 +102,12 @@ const languages = [
       src: "/logo/Figma.png",
       title: "Figma",
       style: "shadow-red-400"
+  },
+  {
+      id: 18,
+      src: "/logo/microsoftOffice.png",
+      title: "Microsoft Office",
+      style: "shadow-orange-400"
   }
 ];
 
