@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
@@ -32,20 +31,18 @@ export default function HeroSection() {
           </div>
 
           <div>
-            <Image
-              src="/profile1.png"
-              width={240}
-              height={240}
-              alt="Picture of Chelsea"
+            <img 
+              src="/profile1.png" 
+              alt="Picture of Hyerang Cho" 
               className="object-cover rounded-full absolute top-4 left-4 md:left-9 lg:left-32
               w-[130px] h-[130px] mt-16 md:mt-18 lg:mt-2
               md:w-[220px] md:h-[220px]
-              lg:w-[305px] lg:h-[305px]"
+              lg:w-[305px] lg:h-[305px]" 
             />
           </div>
 
           <div className="ml-[160px] md:ml-[275px] lg:ml-[460px]">
-            <p className="text-[25px] md:text-[40px] lg:text-[50px] font-semibold">Chelsea Cho</p>
+            <p className="text-[25px] md:text-[40px] lg:text-[50px] font-semibold">Hyerang Cho</p>
             <div className="flex">
               <a href="https://github.com/Chelsea4002" className="text-[20px] md:text-[35px] lg:text-[45px] mr-3 md:mr-4 lg:mr-6">
                 <IoLogoGithub />
@@ -68,15 +65,13 @@ export default function HeroSection() {
 
         <div className="bg-white max-w-[95%] rounded-3xl relative mx-auto p-4 lg:max-w-[100%]">
           <div>
-            <Image
+            <img
                 src="/profile1.png"
-                width={300}
-                height={300} 
-                alt="Picture of Chelsea"
+                alt="Picture of Hyerang Cho"
                 className="object-cover rounded-full ml-[10px] lg:ml-[15px] w-[45px] h-[45px] md:w-[60px] md:h-[60px] lg:w-[80px] lg:h-[80px]"
             />
             <div className="flex flex-col ml-[60px] md:ml-[80px] lg:ml-[105px] translate-y-[-110%]">
-              <p className="text-[15px] md:text-[20px] lg:text-[25px] -mb-[5px] lg:-mb-2">Chelsea Cho</p>
+              <p className="text-[15px] md:text-[20px] lg:text-[25px] -mb-[5px] lg:-mb-2">Hyerang Cho</p>
               <p className="text-[12px] md:text-[15px] lg:text-[20px]">Apr 2, 1998</p>
             </div>
           </div>
@@ -85,24 +80,20 @@ export default function HeroSection() {
             md:text-[30px] 
             lg:ml-5 lg:text-[40px]"
           >
-            I am into Web Development!
+            I am into Web Development and Data Analysis!
           </p>
           <br />
           <div className="flex -mt-6 ml-2 md:ml-3 lg:ml-4 mr-2 md:mr-3 lg:mr-4">
             <div className="">
-              <Image
+              <img
                 src="/home_pic1.png"
-                width={600}
-                height={400}
                 alt="Picture of a spider's web"
                 className="rounded-3xl w-[500px] h-[200px] md:w-[550px] md:h-[300px] lg:w-[600px] lg:h-[400px]"
               />
             </div>
-            <div className="">
-              <Image
+            <div>
+              <img
                 src="/home_pic2.png"
-                width={600}
-                height={400}
                 alt="Picture of the back of a woman on a computer"
                 className="rounded-3xl w-[500px] h-[200px] md:w-[550px] md:h-[300px] lg:w-[600px] lg:h-[400px]"
               />

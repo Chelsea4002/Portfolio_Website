@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import { FiUser } from "react-icons/fi";
 
 const PDF_FILE_URL = 'https://portfolio-website-one-murex.vercel.app/Hyerang_Cho_Resume.pdf'
@@ -26,10 +25,8 @@ export default function About() {
 
         <div className="bg-white max-w-[95%] rounded-3xl relative mx-auto p-4 lg:max-w-[100%]">
           <div className="flex flex-col items-center md:flex-row lg:flex-row">
-            <Image
+            <img
               src="/profile2.png"
-              width={250}
-              height={250}
               alt="Picture of Chelsea"
               className="rounded-full w-[200px] h-[200px] mt-3 md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] object-cover"
             />
@@ -48,7 +45,7 @@ export default function About() {
 
             <div className="text-[16px] mt-4 md:text-[20px] md:pr-4 lg:pr-9 lg:text-[28px] max-w-[95%] mx-auto">
               <p className="text-center font-semibold text-gray-800">
-                I am <strong>Chelsea Cho</strong>, an entry-level <strong>web developer</strong> from Toronto, Canada.
+                I am <strong>Hyerang Cho</strong>, an entry-level <strong>IT candidate</strong> from Toronto, Canada.
               </p>
               <ul className="list-disc list-inside mt-4 space-y-2 pl-4 lg:pl-1">
                 <li className="leading-relaxed"><strong>Self-motivated team player</strong> with a positive attitude, capable of thriving in fast-paced, demanding environments</li>
