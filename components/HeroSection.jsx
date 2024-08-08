@@ -47,7 +47,7 @@ export default function HeroSection() {
               <a href="https://github.com/Chelsea4002" className="text-[20px] md:text-[35px] lg:text-[45px] mr-3 md:mr-4 lg:mr-6">
                 <IoLogoGithub />
               </a>
-              <a href="https://linkedin.com/in/hyerang-cho-5370a71a4" className="text-[20px] md:text-[35px] lg:text-[45px] mr-3 md:mr-4 lg:mr-6">
+              <a href="https://www.linkedin.com/in/chelseacho/" className="text-[20px] md:text-[35px] lg:text-[45px] mr-3 md:mr-4 lg:mr-6">
                 <FaLinkedin />
               </a>
               <a href="https://instagram.com/hyerang0_0" className="text-[20px] md:text-[35px] lg:text-[45px] mr-3 md:mr-4 lg:mr-6">
