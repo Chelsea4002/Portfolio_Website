@@ -42,7 +42,7 @@ export default function HeroSection() {
           </div>
 
           <div className="ml-[160px] md:ml-[275px] lg:ml-[460px]">
-            <p className="text-[25px] md:text-[40px] lg:text-[50px] font-semibold">Hyerang Cho</p>
+            <p className="text-[25px] md:text-[40px] lg:text-[50px] font-semibold">Chelsea Cho</p>
             <div className="flex">
               <a href="https://github.com/Chelsea4002" className="text-[20px] md:text-[35px] lg:text-[45px] mr-3 md:mr-4 lg:mr-6">
                 <IoLogoGithub />
@@ -71,7 +71,7 @@ export default function HeroSection() {
                 className="object-cover rounded-full ml-[10px] lg:ml-[15px] w-[45px] h-[45px] md:w-[60px] md:h-[60px] lg:w-[80px] lg:h-[80px]"
             />
             <div className="flex flex-col ml-[60px] md:ml-[80px] lg:ml-[105px] translate-y-[-110%]">
-              <p className="text-[15px] md:text-[20px] lg:text-[25px] -mb-[5px] lg:-mb-2">Hyerang Cho</p>
+              <p className="text-[15px] md:text-[20px] lg:text-[25px] -mb-[5px] lg:-mb-2">Chelsea Cho</p>
               <p className="text-[12px] md:text-[15px] lg:text-[20px]">Apr 2, 1998</p>
             </div>
           </div>

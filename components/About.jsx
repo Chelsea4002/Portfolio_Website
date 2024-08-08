@@ -2,14 +2,14 @@
 
 import { FiUser } from "react-icons/fi";
 
-const PDF_FILE_URL = 'https://portfolio-website-one-murex.vercel.app/Hyerang_Cho_Resume.pdf'
+const PDF_FILE_URL = 'https://portfolio-website-one-murex.vercel.app/Chelsea_Cho.pdf'
 
 export default function About() {
   const downloadFileAtURL= (url) => {
     const aTag = document.createElement('a');
 
     aTag.href = url;
-    aTag.setAttribute('download', 'Hyerang_Cho_Resume.pdf');
+    aTag.setAttribute('download', 'Chelsea_Cho.pdf');
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
@@ -45,7 +45,7 @@ export default function About() {
 
             <div className="text-[16px] mt-4 md:text-[20px] md:pr-4 lg:pr-9 lg:text-[28px] max-w-[95%] mx-auto">
               <p className="text-center font-semibold text-gray-800">
-                I am <strong>Hyerang Cho</strong>, an entry-level <strong>IT candidate</strong> from Toronto, Canada.
+                I am <strong>Chelsea Cho</strong>, an entry-level <strong>IT candidate</strong> from Toronto, Canada.
               </p>
               <ul className="list-disc list-inside mt-4 space-y-2 pl-4 lg:pl-1">
                 <li className="leading-relaxed"><strong>Self-motivated team player</strong> with a positive attitude, capable of thriving in fast-paced, demanding environments</li>
